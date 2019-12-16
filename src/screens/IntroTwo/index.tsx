@@ -2,10 +2,11 @@ import React from 'react';
 import { Intro } from '../../components';
 
 
+declare function require(name:string);
 
 const IntroTwo = () => (
   <Intro
-    sourceOfAnimation="I am the second animation"
+    sourceOfAnimation={require('../../animations/map.json')}
     title="Title Two"
     body="Lorem Ipsum"/>
 );
